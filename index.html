@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dian Tursina | Portfolio</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">Dian 💕</a>
+      
+      <nav class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#resume" class="nav-link">Resume</a>
+        <a href="#certificate" class="nav-link">Certificate</a>
+        <a href="#portfolio" class="nav-link">Portfolio</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="themeBtn" class="icon-btn" aria-label="Ganti Tema">
+          <i class="fa-solid fa-sun" id="themeIcon"></i>
+        </button>
+        <button id="menuBtn" class="icon-btn mobile-only" aria-label="Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <span class="badge">Selamat Datang di Portofolio Saya</span>
+        <h1>Dian Tursina</h1>
+        <p class="typing-wrapper">
+          <span id="typed"></span><span class="caret"></span>
+        </p>
+        <p class="hero-desc">
+          Fokus mengeksplorasi kode program, rekayasa web, dan arsitektur sistem digital modern.
+        </p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary"><i class="fa-regular fa-paper-plane"></i> Hubungi Saya</a>
+          <a href="assets/cv/CV-Dian-Tursina.pdf" download class="btn btn-outline"><i class="fa-regular fa-file-pdf"></i> Unduh CV</a>
+        </div>
+        <div class="social-links">
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <p class="section-tag">About</p>
+      <h2 class="section-title">Kenali Lebih Dekat</h2>
+      <div class="about-grid">
+        <div class="photo-container glass">
+          <img class="photo" src="dian.jpg" alt="Foto Profil Dian Tursina" loading="lazy">
+        </div>
+        <div class="about-details">
+          <h3 class="accent-text">Informatics Student &amp; Code Explorer</h3>
+          <p>Saya Dian Tursina, mahasiswa Informatika yang berdedikasi untuk memahami bagaimana baris kode bertransformasi menjadi sistem digital yang berdampak nyata.</p>
+          <p>Bagi saya, setiap program adalah sebuah arsitektur yang bisa dipelajari, dibongkar, dan dikembangkan kembali menjadi solusi yang lebih cepat, efisien, dan andal.</p>
+          
+          <ul class="info-list">
+            <li><i class="fa-solid fa-check"></i> <b>Umur:</b> 19 Tahun</li>
+            <li><i class="fa-solid fa-check"></i> <b>Domisili:</b> Pidie Jaya, Aceh</li>
+            <li><i class="fa-solid fa-check"></i> <b>Email:</b> sdiantur@gmail.com</li>
+            <li><i class="fa-solid fa-check"></i> <b>WhatsApp/Telp:</b> 082255844057</li>
+            <li><i class="fa-solid fa-check"></i> <b>Status:</b> Terbuka untuk Kolaborasi</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3 class="sub-heading">Keahlian &amp; Tools</h3>
+      <h4 class="category-title"><i class="fa-solid fa-code"></i> Bahasa Pemrograman</h4>
+      <div class="chips" id="lang"></div>
+      
+      <h4 class="category-title"><i class="fa-solid fa-laptop-code"></i> Software &amp; Tools</h4>
+      <div class="chips" id="software"></div>
+    </section>
+
+    <section id="resume">
+      <p class="section-tag">Resume</p>
+      <h2 class="section-title">Pendidikan &amp; Pengalaman</h2>
+      <div class="timeline-grid">
+        <article class="glass card">
+          <span class="card-date">Februari 2026</span>
+          <h4>Mahasiswa Informatika</h4>
+          <p>Mulai mendalami mata kuliah dasar pemrograman, menganalisis sintaks dan paradigma algoritma, serta membangun fondasi berpikir komputasional.</p>
+        </article>
+        <article class="glass card">
+          <span class="card-date">Mei 2026</span>
+          <h4>Pelatihan Web Development</h4>
+          <p>Mengikuti pelatihan pengembangan web kampus Universitas Almuslim untuk mempelajari fondasi website modern, struktur HTML/CSS, dan interaktivitas.</p>
+        </article>
+        <article class="glass card">
+          <span class="card-date">September 2026</span>
+          <h4>Pixel Community</h4>
+          <p>Bergabung dalam komunitas developer bersama mentor, aktif membaca struktur kode, merancang project dari awal, dan memanfaatkan tools AI secara produktif.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="certificate">
+      <p class="section-tag">Certificate</p>
+      <h2 class="section-title">Sertifikat &amp; Lisensi</h2>
+      <p class="section-subtitle">Klik gambar sertifikat untuk memperbesar dan melihat detail.</p>
+      <div class="cert-grid" id="certList">
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <p class="section-tag">Portfolio</p>
+      <h2 class="section-title">Karya &amp; Proyek</h2>
+      <div class="filter-wrapper">
+        <button class="pill active" data-filter="all">Semua</button>
+        <button class="pill" data-filter="coding">Coding</button>
+        <button class="pill" data-filter="design">Desain</button>
+      </div>
+      <div class="cards-grid" id="works"></div>
+    </section>
+
+    <section id="contact">
+      <p class="section-tag">Contact</p>
+      <h2 class="section-title">Hubungi Saya</h2>
+      <div class="contact-card glass">
+        <form class="contact-form" action="https://formsubmit.co/sdiantur@gmail.com" method="POST">
+          <div class="form-group">
+            <label for="name">Nama Lengkap</label>
+            <input id="name" name="name" type="text" placeholder="Masukkan nama Anda" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Alamat Email</label>
+            <input id="email" name="email" type="email" placeholder="contoh@email.com" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Pesan Anda</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tuliskan pesan atau penawaran kerja sama..." required></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit"><i class="fa-solid fa-paper-plane"></i> Kirim Pesan</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Dian Tursina. Crafted with passion &amp; clean code.</p>
+  </footer>
+
+  <div class="modal" id="certModal">
+    <div class="modal-overlay" id="modalOverlay"></div>
+    <div class="modal-content glass">
+      <button class="modal-close" id="modalClose"><i class="fa-solid fa-xmark"></i></button>
+      <img id="modalImg" src="" alt="Pratinjau Sertifikat">
+      <div class="modal-meta">
+        <h4 id="modalTitle">Judul Sertifikat</h4>
+        <p id="modalIssuer">Penerbit • Tahun</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
